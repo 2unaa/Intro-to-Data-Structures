@@ -51,7 +51,7 @@ Price Price::operator-(const Price& rhs)
 
 bool Price::operator<(const Price& rhs)
 {
-if(this->dollar > rhs.dollar || this->dollar == rhs.dollar && this->cent > rhs.cent) ? true: false
+return(this->dollar > rhs.dollar || this->dollar == rhs.dollar && this->cent > rhs.cent) ? true: false
 }
 //cout operator
 ostream& operator<<(ostream& o, const Price& p)
