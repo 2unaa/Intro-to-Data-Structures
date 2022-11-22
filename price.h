@@ -14,7 +14,7 @@ class Price
   Price(int d, int c);
   Price operator+(const Price& rhs);
   Price operator-(const Price& rhs);
-  bool operator>(const Price& rhs);
+  bool operator<(const Price& rhs);
 };
 
 #endif
